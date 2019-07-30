@@ -8,7 +8,9 @@ service manager. This Docker image simply covers that on top of official image.
 
 These lacks could be also covered within your Packer/Molecule configuration (which is quite typical)
 but that means you waste resources of your CI/CD (and yours on waiting) just to repeat the same thing
-multiple times per day while it can be done once during image build.
+multiple times per day while it can be done once during image build. Docker cache could alleviate
+this issue but most of time tests are run within isolated environment on CI/CD platform without access to it
+or cache is cleared very often to avoid filling disks.
 
 Yes, it's just about saving 30-60 seconds during each run of tests.  
 No rocket science included, just a bit of impatience, sorry :)
