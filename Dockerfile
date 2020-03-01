@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 
 MAINTAINER Krzysztof Magosa <krzysztof@magosa.pl>
 
